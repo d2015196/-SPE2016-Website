@@ -1,0 +1,43 @@
+
+/*creds to http://stackoverflow.com/questions/8846756/how-can-i-resize-an-image-without-stretching sixtillnine */
+
+
+.framelogo { 
+    width: 300px;
+    height: 300px;
+
+
+}
+img.companylogo {
+    
+    width: 100%;
+    height: 100%;
+
+    }
+.ticker { 
+    
+    /* source: https://css-tricks.com/forums/topic/iframe-xy-positioning/ */
+    
+    position: absolute; 
+    left: 1500px;
+    top: 220px;
+    overflow: hidden;
+
+}
+
+.chart { 
+
+    position: absolute;
+    left: 500px;
+    top: 220px;
+    overflow: hidden;
+
+}
+
+/* this iframe is lazy doesnt move */ 
+
+/*iframe {
+    
+    align-content: center;
+}*/
+

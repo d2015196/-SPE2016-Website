@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <LINK REL = "stylesheet" TYPE = "text/css" HREF= "resultpage.css"> 
+        <LINK REL = "import" href = "navbar.html" > 
+        <META NAME = "author" CONTENT = "DianaMarieHouston"
+    
+    </head>
+            
+     <body>
+        
+        <!--creds to http://robdodson.me/exploring-html-imports/--> 
+        <!-- header bar --> 
+        
+        <script>
+           var link = document.querySelector('link[rel="import"]');
+           var content = link.import.querySelector('#navigation');
+           document.body.appendChild(document.importNode(content, true)); 
+           var title = document.getElementsByTagName("title")[0].innerHTML; 
+            
+            //creds: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_classlist_add
+            document.getElementById(String(title)).classList.add("active"); 
+           
+        </script> 
+        
+         
+       <div class = "framelogo">
+        
+        <img class = "companylogo" src ="resultimage/trowe.PNG" > 
+            
+        </div>
+        
+         <div class = "ticker">
+         
+           <!-- Start TC2000 widget -->
+             <iframe width="320" noresize="noresize" scrolling="no"      height="60" frameborder="0" src="https://widgets.tc2000.com/WidgetServer.ashx?id=16542"></iframe>
+             <!-- END TC2000 Widget -->
+
+         
+         
+         </div>
+    <!-- i frame option for plotly graph, align center command is being stubborn --> 
+        
+      
+        <div class = "chart">
+        <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~d2015196/8.embed"></iframe>
+        </div>
+      
+               
+    
+    </body>
+
+</html>

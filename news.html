@@ -1,0 +1,29 @@
+<html> 
+    
+    <head> 
+        <LINK REL = "import" href = "navbar.html" >
+        <title>news</title>
+    
+    </head>
+    
+    <body> 
+        
+        
+        <script>
+            
+           var link = document.querySelector('link[rel="import"]');
+           var content = link.import.querySelector('#navigation');
+           document.body.appendChild(document.importNode(content, true)); 
+           
+           var title = document.getElementsByTagName("title")[0].innerHTML; 
+            
+            //creds: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_classlist_add
+            document.getElementById(String(title)).classList.add("active"); 
+           
+        </script> 
+    
+    
+    </body>
+
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- code from online --> 
+
+<html>
+<head>
+    
+    <title>home</title>
+    <LINK REL = "stylesheet" TYPE= "text/css" HREF = "homey.css">
+    <LINK REL = "import" href = "navbar.html" > 
+</head>
+<body>
+    
+<!-- creds for search bar: http://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float_advanced --> 
+     
+ <script>
+            
+           var link = document.querySelector('link[rel="import"]');
+           var content = link.import.querySelector('#navigation');
+           document.body.appendChild(document.importNode(content, true)); 
+           
+           var title = document.getElementsByTagName("title")[0].innerHTML; 
+            
+            //creds: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_classlist_add
+            
+            document.getElementById(String(title)).classList.add("active"); 
+           
+</script> 
+    
+    
+    <img class = "logo" src = "dynamo.png.png" alt = ""> 
+   
+            
+ <section class="webdesigntuts-workshop">
+ <form action="formsubmit.php" method="GET">		    
+ <input type="search" name = "Stock" placeholder="What are you looking for?">		    	
+     <button>Search</button>
+</form>
+    </section>
+    
+</body>
+</html>
+
